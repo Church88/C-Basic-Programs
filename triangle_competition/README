@@ -1,0 +1,91 @@
+========================================
+========================================
+			TRIANGLE COMPETITION
+========================================
+
+Welcome to Major League Programming!
+
+The thrill of victory!
+The agony of defeat!
+(Or vice versa.)
+
+Tonight's competition will be a timed
+event that will challenge your ability
+to write correct code quickly in tandem
+with a partner.
+
+========================================
+
+Your program will calculate the area
+of a triangle three different ways:
+
+1. Calculating the area of a right
+triangle, whose bottom left corner is on
+the origin, the second corner lies
+on the x axis, with a coordinate of x, and 
+the third corner on the y axis, with a
+coordinate of y. x and y are values
+passed in by the user.
+
+2. Calculating the area of an equilateral
+triangle whose *height* is x. X is entered
+by the user.
+
+3. Calculating the area of an equilateral
+triangle whose side is given by the user.
+The user will input x1 y1 x2 y2 in that
+order, which is the coordinates for one
+of the lines that make up the triangle.
+
+4. You must write a main function that will
+prompt the user: "Do you want to calculate
+the area of 1) A right triangle, 2) an
+equilateral triangle based on height, or
+3) an equilateral triangle based on side
+length?" and input 1, 2, or 3.
+
+If the choice is 1, then the program will
+prompt the user to "Input the x and y
+coordinates of the right triangle: ", and then
+output the area of the triangle, followed by
+a newline.
+
+If the choice is 2, then the program will
+prompt the user to "Enter the height of the 
+triangle: ". The program will then output the
+area of the triangle, followed by a newline.
+
+If the choice is 3, then the program will
+prompt the user to "Enter four numbers: "
+which will be x1 y1 x2 y2. The program will
+calculate the length of the line segment
+entered by the user (it will not output this
+number) and then it will output the area of
+the triangle, followed by a newline.
+
+========================================
+
+Important Notes:
+
+In all cases above, the area must be
+POSITIVE.
+
+Use floats for all your calculations,
+or your answers will not be right.
+
+Do not use endlines in any of your cout
+statements except where explicitly said.
+
+If the user makes a choice not 1,2,or 3
+then output "INVALID INPUT" and quit.
+
+========================================
+
+Scoring:
+5 points for completing the assignment before
+the end of class.
+5 points for being the first group to complete
+5 points for being the group to pass the most
+test cases.
+
+========================================

@@ -1,0 +1,59 @@
+Enter your team name here:
+Enter your names here: 
+
+==========================
+  SSN CODING CHALLENGE
+==========================
+
+Description: This is a simple SSN database. The users of the system will enter records into the database, and then look up records from the database
+
+Trophies: Three trophies will be awarded: 1) First group to finish (with 70%
+correctness), 2) Most correct (closest to 100% correct), 3) Fastest execution
+time (measured on the largest program input). Trophies award bonus points in
+the class.
+
+The program will run in two distinct phases:
+
+PHASE 1
+The user will enter SSN records, three lines at a time (i.e. separated by newlines):
+1. The first line will contain their name. Names must start with a letter, and can include spaces or other characters thereafter. All names will be unique.
+2. The second line will contain their address, which can be any combination of printable characters.
+3. The third line will contain their social security number, which will be all digits (NO HYPHENS) that range between 0 and 999999999. All SSNs will be unique.
+
+Errors: If an errors occurs (a number starting a name, or a letter in the SSN
+field) print out -1 and immediately exit.
+
+Ending the phase: The user can type in as many entries as they want. When they're done, they will enter "done" for the name (not including the quotes),
+and if they type this there will not be an address or social security number either.
+
+PHASE 2
+After Phase 1 finishes, the program will enter Phase 2. In Phase 2, the user will enter either names or SSNs, and the system will look for those records
+in the database, and if they exist, print out the entire record just as it was entered. (i.e. name, address, SSN, each on their own lines).
+
+If there is no match, print nothing.
+
+If they type "done" for the search string, quit the program.
+
+NOTE: The only thing your program should print out is the records that match in Phase 2. Remove all other cout statements.
+
+Example input file:
+----- ----- ----- ----- -----
+Bob Smith
+1111 Bob St.
+123456789
+Alice Charles
+Nowhereland, America
+42
+done
+42
+43
+done
+----- ----- ----- ----- -----
+
+
+The output of this program would be :
+----- ----- ----- ----- -----
+Alice Charles
+Nowhereland, America
+42
+----- ----- ----- ----- -----

@@ -1,0 +1,76 @@
+Hardsoft Homework - must be done in your ~/hardsoft 
+directory in a file called main.cc.
+
+Due on Friday 9/18/15
+
+You will create a program that will estimate the 
+hardness or softness of a sentence.
+
+1. Along with the rest of the magic, put the following 
+line at the top of your file: #include <cctype>
+
+2. In an infinite loop, do the following steps:
+
+3. Print "Please enter a sentence: " to cout.
+
+4. Input a sentence from the user into a string 
+variable named "input" (don't write the quotes). Use 
+getline(cin,input) to read into input until a newline 
+is entered. 
+
+5. After you've input the string, capitalize it using 
+the following code:
+	for (char &ch : input)
+		ch = toupper(ch);
+
+6. If the input string is "QUIT", then break out of the infinite loop. Also break out of the infinite loop if cin becomes invalid.
+
+7. Output the hardness or softness of the sentence. 
+Search the sentence for words like "PLEASE" or "THANK 
+YOU" (search for the terms in all caps since we've 
+upper-cased the input string) and subtract one point 
+for each soft (polite) word used. Add one point for 
+each hard word (like "DEMAND" "NOW" or an exclamation 
+mark). Use the string .find() function to find 
+matches. It will equal "npos" (-1) if it is not found.
+
+8. The default hardness is 0. The maximum hardness is 
++10, the minimum hardness is -10. Clamp the values to 
+this range, and then output it.
+
+Go back up to 2.
+
+Here is the official list of hard words:
+Now 
+Immediately
+This instant
+!
+Must
+Demand
+
+Extra Credit:
+Hey, <insult> (for a long list of possible insults)
+If the input string is all caps to begin with
+
+Here is the official list of soft words:
+Please
+Thank You
+Por Favor
+Excuse Me
+Excuse Moi
+Uh
+...
+Can
+Would
+? 
+May
+Could
+
+Extra Credit:
+Saying any of the soft terms multiple times should reduce the hardness by 1 every time they appear. (Please please please is softer than just one please.)
+
+You are free to do this in a foreign language, and 
+come up with as many hard or soft words as you can 
+think of. Include another file called 
+"vocabulary_list" in which you write down the terms 
+you're using for hard and soft.

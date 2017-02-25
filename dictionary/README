@@ -1,0 +1,62 @@
+========================================
+Welcome to CODE FEST
+========================================
+
+Follow these instructions exactly. Any time you prompt the user, I will tell
+you exactly what to write.
+
+Instructions:
+
+1. First, you will prompt the user for a file to read from.
+
+Prompt: "Please enter a file name to edit:\n";
+
+2. You will read from the file one character at a time until
+you encounter a character signifying an end of a sentence ('.','?','!','\n').
+You will store that sentence (including the punctuation mark) into a string.
+You should keep track of what order the strings were read in as well.
+
+3. Will store the string into a data structure, and continue reading sentences
+into strings and storing them in the data structure until you hit the end of
+file.
+
+4. Close the file.
+
+5. Do an srand(0) to see the random number generator with 0.
+
+6. Randomly shuffle the order of the strings using random_shuffle and not
+specifying a random number generator.
+
+7. Now output each sentence in the essay in this random order, using the
+following format: "Number: The Sentence", for example:
+
+1: Hi, my name is Bill.
+2: A woozle is a wozzle!
+3: Welcome to the essay?
+
+NOTE: You should trim leading and/or trailing whitespace with each sentence so
+it doesn't look terrible. So "Bill is awesome\n\n  \n" would be printed just as
+"Bill is awesome".
+
+8. You will then prompt the user to change a sentence as such:
+
+Prompt: "Please enter a sentence number to edit (-1 to quit):\n"
+
+9. If they type -1, jump to #14 below.
+
+10. Otherwise prompt them to edit the sentence as such:
+
+Prompt: "Please enter the new sentence for sentence " << number << ":\n"
+
+11. Input a new sentence from the user, reading from cin until a \n is read,
+and replace the old string with the new string.
+
+Important note: YOU MUST MAINTAIN THE FORMATTING OF THE FILE.
+In other words, if the current line was followed by three newlines,
+you must make sure the new line is also followed by three newlines.
+
+12. Go back to #7 and continue until the user chooses to quit.
+
+13. Put the data structure back into the original order
+
+14. Output the data structure in the correct order back into the original file

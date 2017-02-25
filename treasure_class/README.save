@@ -1,0 +1,108 @@
+Homework 2, Part 1 - X Marks the Spot!
+
+You will need to write two classes, one called Spot and one called Treasure.
+
+Spot will hold potential dig sites for digging up treasure. The Treasure class
+will define a rectangular region on the ground where a treasure might be
+found. In part 2 of this assignment, we'll write a treasure hunt program.
+For now, we're just going to build the classes we need.
+
+All your code must be within the file treas.cc. It must be organized like
+this from the top of the file to the bottom:
+1) Spot must be in the source code above Treasure
+2) Treasure must be above your main() function.
+3) Your main() function.
+
+Nothing inside of your main() will be graded (it will
+actually be snipped out by the autograder), so feel free to put whatever
+you want inside there and test the hell out of your Spot and Treasure Code.
+
+Your assignment: 
+
+Part A) Write Spot. Spot is a very simple class. You must implement the following:
+1) Make sure it's called Spot (exactly "Spot" - including the capital S).
+2) It should have two private member variables to hold the x and y coordinates
+that the Spot represents.
+
+In the public: section you should have:
+3) Write a constructor that takes two parameters to initialize both
+the x and y private member variables
+4) (Optional) It can have a default constructor that sets both to 0
+5) It should have get/set methods for both private member variables. They
+should have the following signatures:
+int get_x()
+int get_y()
+int set_x(int new_x)
+int set_y(int new_y)
+6) Write a function called distance() that computes the distance the Spot is
+away from the origin (0,0). It takes no parameters It must return an int.
+The formula to compute the distance from the origin is just the Pythagorean theorem:
+sqrt(x*x+y*y) 
+In order to call the sqrt function, you must #include <cmath>, but I've
+already done that for you at the top of the file.
+7) In no case should the class allow setting an x or y position greater than
+99 or less than 0. If the user tries to do this, set the position to 0
+instead.
+
+Part B) Write Treasure. Treasure will define a rectangle, with a minimum and maximum x
+and y values that represent where the treasure can be found on a field. It
+will also hold the value of the treasure. All five of these are integers.
+
+1) Make sure this class is called Treasure.
+2) Have five private member variables to hold the minimum and maximum x and y
+coordinates, plus the value of the treasure.
+In the public section:
+3) Write a constructor that takes five parameters, that
+will set each of these five private member variables.
+4) (Optional) Write a default constructor that sets all five private member
+variables to zero.
+5) Write the following get/set functions whose signatures I provide:
+int get_x_min()
+int get_y_min()
+int get_x_max()
+int get_y_max()
+int get_value()
+void set_x_min(int new_x_min)
+void set_y_min(int new_y_min)
+void set_x_max(int new_x_max)
+void set_y_max(int new_y_max)
+void set_value(int new_value)
+6) Write a member function called within() that takes a Spot as a parameter.
+It will return true if that Spot is within the rectangle defined by the
+Treasure, false otherwise. For example, if our minimum x is 10 and our maximum
+x is 20, and ditto for y, and we pass in a Spot with x and y both 15, then
+this spot is within the rectangle defined by us, and so we return true.
+7) Write a function called loot(). It will return an integer, and take no
+parameters. The first time a treasure gets looted, it will return the value of
+int get_x_min()
+int get_y_min()
+int get_x_max()
+int get_y_max()
+int get_value()
+void set_x_min(int new_x_min)
+void set_y_min(int new_y_min)
+void set_x_max(int new_x_max)
+void set_y_max(int new_y_max)
+void set_value(int new_value)
+the treasure, and set its value to 0. (Treasure can only be looted once.) If
+loot gets called on the treasure again, it will return 0.
+8) In no case can a x or y minimum or maximum be greater than 99 or less than
+0. Set it to the nearest number (99 if too big, 0 if too small).
+9) In no case can .value be negative. Set it to 0 if the value is < 0.
+10) In no case can x_maximum be smaller than x_minimum (and ditto for y). If
+the user of your code tries to set it that way, set it to the lowest number
+possible. For example, if x_minimum is 10, and I try setting your x_maximum to
+3, it will get set to 10 instead.
+11) Ditto for trying to set the minimum bigger than the maximum.
+
+Make sure you test your code thoroughly in your main function.
+When you're ready to see that it's good to go, issue the following commands:
+make clean
+make 
+a.out
+
+You should only need to do a make clean when switching from your main file to
+the main file used by my testing code.
+
+If it says "PASSED ALL TESTS" then yay, you're done!
+If not, read which test you failed and try to fix it.

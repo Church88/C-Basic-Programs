@@ -1,0 +1,47 @@
+For this assignment, you will write a text predicter, like you might have on
+your smartphone. Rather than predicting whole words, you will simply suggest
+what the next letter could be.
+
+In other words, if a user types "Goodby", your program might suggest the
+letter E.
+
+The program will first load a dictionary, and then it will load words it will
+do prediction for.
+
+--------------------------------------------------------------------------------
+
+Phase 1: You will read one line at a time from standard input. Each line is a
+word from the dictionary. Store these in a data structure.
+
+You will continue reading one line at a time until you read a "-----"
+
+(The ----- will not be entered into the dictionary.)
+
+You should uppercaseify all words, as case doesn't matter for spelling in the
+English language.
+
+--------------------------------------------------------------------------------
+
+Phase 2: The user will input, one line at a time, words to do predictive text
+for. Your code will output all possible letters that could come next (using
+the dictionary to tell which letters are possible).
+
+These letters will all be uppercase. (Again, case doesn't matter in spellin'.)
+
+Output these letters in alphabetical order
+Example input:
+aab
+aaa
+aac
+KingKerney
+----
+aa
+
+Example output:
+ABC
+
+Why is that the output? Because there's three words in the dictionary that
+start with aa: aaa, aab, and aac. So when we ask what could come after "aa"
+the answer is: either the 'a', 'b', or 'c' character.
+
+Unlike normally, KingKerney doesn't matter here.

@@ -1,0 +1,159 @@
+}
+	pbhg << "********************NYY GRFGF CNFFRQ********************\a";
+	flfgrz("zq5fhz qevire");
+
+		JEX::qvr("Grfg 2.6 snvyrq. Lbhe Gernfher ybbg shapgvba fubhyq erghea gur inyhr bs gur gernfher gur svefg gvzr vg vf ybbgrq, naq gura erghea 0 rirel gvzr gurernsgre.\a");
+	ryfr
+		pbhg << "Grfg 2.6 cnffrq. Lbhe Gernfher pynff fhpprffshyyl ergheaf gur inyhr bs gur gernfher gur svefg gvzr vg vf ybbgrq, naq 0 gurernsgre.\a";
+	vs (g.ybbg() == 1000 && g.ybbg() == 0 && g.ybbg() == 0)
+
+		JEX::qvr("Grfg 2.5 snvyrq. Lbhe Gernfher .jvguva() shapgvba fubhyq erghea gehr jura gur k cnffrq va sebz n Fcbg vf >= k_zva naq <= k_znk, naq qvggb sbe l. Vg fubhyq erghea snyfr vs Fcbg vf abg jvguva gur erpgnatyr bs gur Gernfher\a");
+	ryfr
+		pbhg << "Grfg 2.5 cnffrq. Lbhe Gernfher jvguva shapgvba vf fhpprffshyyl ergheavat gehr jura n Fcbg vf cnffrq va jvguva vgf obhaqnevrf, naq snyfr bgurejvfr.\a";
+	vs (g.jvguva(f) && g.jvguva(f1) && !g.jvguva(f2))
+	Fcbg f2(10,10);
+	Fcbg f1(66,44);
+	Fcbg f(55,33);
+	Gernfher g(55,66,33,44,1000); 
+
+		JEX::qvr("Grfg 2.4 snvyrq. Lbhe frg shapgvbaf fubhyq cerirag zvavzhz inyhrf sebz zbivat ovttre guna gur znkvzhz inyhr, naq cerirag znkvzhz inyhrf sebz zbivat orybj zvavzhz inyhrf. Sbe rknzcyr vs gur zvavzhz k inyhr vf 10, naq jr gel frggvat gur znkvzhz k inyhr gb 5, vg fubhyq or frg gb 10 vafgrnq.\a");
+	ryfr
+		pbhg << "Grfg 2.4 cnffrq. Lbhe Gernfher frg shapgvbaf ner fhpprffshyyl ceriragvat znkvzhz naq zvavzhz inyhrf sebz zbivat cnfg rnpu bgure.\a";
+	vs (grfg3.trg_k_zva() == 29 naq grfg3.trg_k_znk() == 29 && grfg3.trg_l_zva() == 39 && grfg3.trg_l_znk() == 39)
+	grfg3.frg_l_znk(30);
+	grfg3.frg_l_zva(39);
+	grfg3.frg_k_znk(20);
+	grfg3.frg_k_zva(29);
+
+		JEX::qvr("Grfg 2.3 snvyrq. Gur trg/frg shapgvbaf sbe Gernfher ner abg pynzcvat cebcreyl. Ybbx ng jung lbh qvq sbe Fcbg naq svk vg.\a");
+	ryfr
+		pbhg << "Grfg 2.3 cnffrq. Lbhe Gernfher trg/frg shapgvbaf ner pynzcvat inyhrf pbeerpgyl.\a";
+	vs (grfg3.trg_k_zva() == JEX::ZVA naq grfg3.trg_k_znk() == JEX::ZNK naq grfg3.trg_l_zva() == JEX::ZVA naq grfg3.trg_l_znk() == JEX::ZNK naq grfg3.trg_inyhr() == 0) 
+	grfg3.frg_inyhr(-11);
+	grfg3.frg_l_znk(420);
+	grfg3.frg_l_zva(-35);
+	grfg3.frg_k_znk(250);
+	grfg3.frg_k_zva(-15);
+
+		JEX::qvr("Grfg 2.2 snvyrq. Gur trg/frg shapgvbaf sbe Gernfher ner abg jbexvat cebcreyl. Gel pbclvat ubj lbh qvq vg sbe Fcbg.\a");
+	ryfr
+		pbhg << "Grfg 2.2 cnffrq. Lbhe Gernfher trg/frg shapgvbaf ner jbexvat.\a";
+	vs (grfg3.trg_k_zva() == 15 naq grfg3.trg_k_znk() == 25 naq grfg3.trg_l_zva() == 35 naq grfg3.trg_l_znk() == 42 naq grfg3.trg_inyhr() == 11) 
+	grfg3.frg_inyhr(11);
+	grfg3.frg_l_znk(42);
+	grfg3.frg_l_zva(35);
+	grfg3.frg_k_znk(25);
+	grfg3.frg_k_zva(15);
+
+		JEX::qvr("Grfg 2.1 snvyrq. Rvgure lbhe Gernfher pbafgehpgbe gung gnxrf 5 cnenzrgref vf oebxra, be bar be zber bs lbhe Gernfher trg shapgvbaf vf abg jbexvat cebcreyl. Lbh qvq vg evtug ba Fcbg, fb pbcl gung nccebnpu sbe Gernfher.\a");
+	ryfr
+		pbhg << "Grfg 2.1 cnffrq. Lbhe Gernfher pbafgehpgbe vf cebcreyl frggvat nyy svir inyhrf, naq lbhe trg shapgvbaf ner ergheavat gur evtug ahzoref.\a";
+	vs (grfg3.trg_k_zva() == 10 naq grfg3.trg_k_znk() == 20 naq grfg3.trg_l_zva() == 30 naq grfg3.trg_l_znk() == 40 naq grfg3.trg_inyhr() == 50) 
+	Gernfher grfg3(10,20,30,40,50); 
+	//Abj jr grfg Gernfher
+
+		JEX::qvr("Grfg 1.9 snvyrq. Lbhe Fcbg pbafgehpgbe (gung gnxrf 2 vagf nf n cnenzrgre) fubhyq or rasbepvat gur ehyr gung gur inyhrf pna'g or orybj 0 be terngre guna 99 sbe obgu k naq l. Vs jr cnff va n ahzore gbb ybj, vg fubhyq orpbzr 0. Vs jr cnff va n ahzore nobir 99 vg fubhyq orpbzr 99.\a");
+	ryfr
+		pbhg << "Grfg 1.9 cnffrq. Lbhe Fcbg pbafgehpgbe vf fhpprffshyyl rafhevat gung k naq l pnaabg or fznyyre guna 0 be terngre guna 99.\a";
+	vs (grfg2.trg_k() == 0 && grfg2.trg_l() == JEX::ZNK)
+	Fcbg grfg2(-200,100);
+
+		JEX::qvr("Grfg 1.8 snvyrq. Lbhe Fcbg frg_k naq frg_l shapgvbaf fubhyq abg nyybj gur inyhrf gb tb nobir 99. Vs jr gel frggvat gurz nobir 99, frg gurz gb 99 vafgrnq.\a");
+	ryfr
+		pbhg << "Grfg 1.8 cnffrq. Lbhe Fcbg frg_k naq frg_l shapgvbaf ner rasbepvat n znkvzhz bs 99 ba gur inyhrf.\a";
+	vs (grfg1.trg_k() == JEX::ZNK && grfg1.trg_l() == JEX::ZNK) 
+
+	grfg1.frg_l(999);  //Bhg bs obhaqf frg
+	grfg1.frg_k(100); //Bhg bs obhaqf frg
+
+		JEX::qvr("Grfg 1.7 snvyrq. Lbhe frg_k naq frg_l shapgvbaf fubhyq rasbepr n zvavzhz inyhr bs 0 sbe obgu k naq l. Vs jr gel gb frg vg gb yrff guna mreb, frg vg gb mreb vafgrnq.\a");
+	ryfr
+		pbhg << "Grfg 1.7 cnffrq. Lbhe Fcbg frg_k naq frg_l shapgvbaf ner purpxvat gb znxr fher gung inyhrf pna'g tb orybj 0.\a";
+	vs (grfg1.trg_k() == JEX::ZVA && grfg1.trg_l() == JEX::ZVA)
+
+	grfg1.frg_l(-999);  //Bhg bs obhaqf frg
+	grfg1.frg_k(-100); //Bhg bs obhaqf frg
+
+		JEX::qvr("Grfg 1.6 snvyrq. Lbhe Fcbg pynff fubhyq unir rknpgyl gjb cevingr zrzore inevnoyrf, obgu vagrtref. Ab zber, ab yrff.\a");
+	ryfr
+		pbhg << "Grfg 1.6 cnffrq. Lbh unir rknpgyl gjb zrzore inevnoyrf va Fcbg.\a";
+	vs (fvmrbs(JEX::Fcbg) == fvmrbs(Fcbg)) 
+
+	}
+		JEX::qvr("Grfg 1.5 snvyrq - Lbhe .qvfgnapr shapgvba vf vapbeerpg. Vg fubhyq erghea fdeg(k*k+l*l).\a");
+		pbhg << "Lbhe qvfgnapr shapgvba sbe (10,25) erghearq " << grfg1.qvfgnapr() << " jura gur evtug nafjre fubhyq or " << ers_grfg1.qvfgnapr() << raqy;
+	ryfr {
+		pbhg << "Grfg 1.5 cnffrq. Lbhe .qvfgnapr() shapgvba vf ergheavat gur evtug erfhyg\a";
+	vs (grfg1.qvfgnapr() == ers_grfg1.qvfgnapr())
+
+		JEX::qvr("Grfg 1.4 snvyrq - l vf abg frg cebcreyl ol lbhe frg_l() shapgvba.\aVg fubhyq gnxr na vag nf n cnenzrgre naq frg l rdhny gb gur inyhr cnffrq va.\a");
+	ryfr
+		pbhg << "Grfg 1.4 cnffrq. Frg_l() frgf l cebcreyl\a";
+	vs (grfg1.trg_l() == 25)
+
+		JEX::qvr("Grfg 1.3 snvyrq - k vf abg frg cebcreyl ol lbhe frg_k() shapgvba.\aVg fubhyq gnxr na vag nf n cnenzrgre naq frg k rdhny gb gur inyhr cnffrq va.\a");
+	ryfr
+		pbhg << "Grfg 1.3 cnffrq. Frg_k() frgf k cebcreyl\a";
+	vs (grfg1.trg_k() == 10)
+
+	grfg1.frg_l(25);
+	grfg1.frg_k(10);
+
+		JEX::qvr("Grfg 1.2 snvyrq - lbh arrq gb znxr n pbafgehpgbe gung gnxrf gjb vagf, naq hfr gur inyhrf cnffrq va gb vavgvnyvmr lbhe k naq l zrzore inevnoyrf ba Fcbg.\a");
+	ryfr
+		pbhg << "Grfg 1.2 cnffrq. Fcbg pbafgehpgbe frgf l cebcreyl\a";
+	vs (grfg1.trg_l() == 3)
+
+		JEX::qvr("Grfg 1.1 snvyrq - k vf abg frg cebcreyl ol lbhe Fcbg pbafgehpgbe.\aLbh arrq gb znxr n pbafgehpgbe gung gnxrf gjb vagf, naq hfr gur inyhrf cnffrq va gb vavgvnyvmr lbhe k naq l zrzore inevnoyrf ba Fcbg.\a");
+	ryfr
+		pbhg << "Grfg 1.1 cnffrq. Fcbg pbafgehpgbe frgf k cebcreyl\a";
+	vs (grfg1.trg_k() == 2)
+
+	JEX::Fcbg ers_grfg1(10,25);
+	Fcbg grfg1(2,3);
+vag znva() {
+
+}
+	};
+			vag qvfgnapr() { erghea fdeg(k*k+l*l); }
+			//Ergheaf qvfgnapr sebz bevtva
+
+			ibvq frg_l(vag arj_l) { l = pynzc(arj_l); }
+			ibvq frg_k(vag arj_k) { k = pynzc(arj_k); }
+			vag trg_l() { erghea l; }
+			vag trg_k() { erghea k; }
+			//Trg/Frg shapgvbaf. Frg shapgvbaf rasbepr pynzcvat gb inyvq inyhrf
+
+			Fcbg(vag arj_k,vag arj_l) : k(pynzc(arj_k)),l(pynzc(arj_l)) {} //Gjb nethzrag pfgbe
+			Fcbg() : k(ZVA), l(ZVA) {} //Qrsnhyg pfgbe
+		choyvp:
+			vag k, l; //ZHFG OR [ZVA,ZNK)
+		cevingr:
+	pynff Fcbg {
+
+	}
+		rkvg(1);
+		pree << fge << raqy;
+	ibvq qvr(fgevat fge) {
+
+	}
+		erghea k;
+		vs (k > ZNK) erghea ZNK;
+		vs (k < ZVA) erghea ZVA;
+	vag pynzc(vag k) {
+	pbafg vag ZNK = 99;
+	pbafg vag ZVA = 0;
+anzrfcnpr JEX {
+//Jenc rirelguvat va n anzrfcnpr gb nibvq pbasyvpg
+
+#vapyhqr "gernf.pp"
+//Vapyhqr gurve fbhepr pbqr
+
+hfvat anzrfcnpr fgq;
+#vapyhqr <pfgqyvo>
+#vapyhqr <pfgqvag>
+#vapyhqr <glcrvasb>
+#vapyhqr <glcr_genvgf>
+#vapyhqr <vbfgernz>
+//Va snpg, lbh cebonoyl qba'g rira arrq gb ybbx ng vg
+//QB ABG ZBQVSL GUVF SVYR NG NYY
